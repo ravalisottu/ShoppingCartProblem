@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop – Frontend Code Kata #1</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <a routerLink="/shop">THE SHOP</a>
+                <a routerLink="/cart">Your Cart <span>({{itemsCount}})</span></a>
+                <span class="items-count">Total Amount : {{ totalAmount }} $</span>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrapper">
+        <!-- dynamic display of components based on user request -->
+        <router-outlet></router-outlet>
+    </main>
+
+    <footer class="page-footer">
+        <div class="wrapper">
+            <a href="https://github.com/webfactory/frontend-code-katas">webfactory Frontend Code Katas</a>
+        </div>
+    </footer>
+</body>
+
+</html>

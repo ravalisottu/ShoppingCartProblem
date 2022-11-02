@@ -1,0 +1,7 @@
+<h1>Welcome to THE SHOP</h1>
+<p class="slogan">Purveyors of Fine Art Prints</p>
+<ul class="items-list">
+    <li class="item" *ngFor="let items of products">
+        <app-card [list]="items" (addItemEvent)="addItem($event)"></app-card>
+    </li>
+</ul>
